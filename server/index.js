@@ -2,9 +2,12 @@
 
 // importing express framework
 const express = require('express');
+const cors = require('cors');
 
 // create instance of application
 const app = express();
+
+app.use(cors());
 
 // define port number to run on
 const port = process.env.PORT || 5000;

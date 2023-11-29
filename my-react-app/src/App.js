@@ -7,7 +7,7 @@ function App() {
   // useEffect hook to fetch data when component mounts 
   useEffect(() => {
     //fetching data from endpoint
-    fetch('/api/data')
+    fetch('http://localhost:5000/api/data')
       // response json
       .then((res) => res.json())
       // update data state
@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>React + Node.js</h1>
+        <h1>React + Node.js page</h1>
         {data && <p>Message from the server: {data}</p>}
       </header>
     </div>
